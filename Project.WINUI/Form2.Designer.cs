@@ -53,6 +53,7 @@
             this.btnYokEt.TabIndex = 13;
             this.btnYokEt.Text = "YOK ET";
             this.btnYokEt.UseVisualStyleBackColor = false;
+            this.btnYokEt.Click += new System.EventHandler(this.btnYokEt_Click);
             // 
             // btnGuncelle
             // 
@@ -63,6 +64,7 @@
             this.btnGuncelle.TabIndex = 14;
             this.btnGuncelle.Text = "GÜNCELLE";
             this.btnGuncelle.UseVisualStyleBackColor = false;
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
             // btnSil
             // 
@@ -73,6 +75,7 @@
             this.btnSil.TabIndex = 15;
             this.btnSil.Text = "SİL";
             this.btnSil.UseVisualStyleBackColor = false;
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // btnSilinenler
             // 
@@ -83,6 +86,7 @@
             this.btnSilinenler.TabIndex = 10;
             this.btnSilinenler.Text = "SİLİNENLERİ LİSTELE";
             this.btnSilinenler.UseVisualStyleBackColor = false;
+            this.btnSilinenler.Click += new System.EventHandler(this.btnSilinenler_Click);
             // 
             // btnGuncellenenler
             // 
@@ -93,6 +97,7 @@
             this.btnGuncellenenler.TabIndex = 11;
             this.btnGuncellenenler.Text = "GÜNCELLENENLERİ LİSTELE";
             this.btnGuncellenenler.UseVisualStyleBackColor = false;
+            this.btnGuncellenenler.Click += new System.EventHandler(this.btnGuncellenenler_Click);
             // 
             // btnAktifler
             // 
@@ -103,19 +108,20 @@
             this.btnAktifler.TabIndex = 12;
             this.btnAktifler.Text = "AKTİFLERİ LİSTELE";
             this.btnAktifler.UseVisualStyleBackColor = false;
+            this.btnAktifler.Click += new System.EventHandler(this.btnAktifler_Click);
             // 
             // txtAciklama
             // 
             this.txtAciklama.Location = new System.Drawing.Point(1202, 124);
             this.txtAciklama.Name = "txtAciklama";
-            this.txtAciklama.Size = new System.Drawing.Size(242, 29);
+            this.txtAciklama.Size = new System.Drawing.Size(242, 34);
             this.txtAciklama.TabIndex = 8;
             // 
             // txtIsim
             // 
             this.txtIsim.Location = new System.Drawing.Point(1202, 42);
             this.txtIsim.Name = "txtIsim";
-            this.txtIsim.Size = new System.Drawing.Size(242, 29);
+            this.txtIsim.Size = new System.Drawing.Size(242, 34);
             this.txtIsim.TabIndex = 9;
             // 
             // btnKategoriEkle
@@ -128,6 +134,7 @@
             this.btnKategoriEkle.TabIndex = 6;
             this.btnKategoriEkle.Text = "KATEGORİ EKLE";
             this.btnKategoriEkle.UseVisualStyleBackColor = false;
+            this.btnKategoriEkle.Click += new System.EventHandler(this.btnKategoriEkle_Click);
             // 
             // btnListele
             // 
@@ -139,6 +146,7 @@
             this.btnListele.TabIndex = 7;
             this.btnListele.Text = "LİSTELE";
             this.btnListele.UseVisualStyleBackColor = false;
+            this.btnListele.Click += new System.EventHandler(this.btnListele_Click);
             // 
             // dgvKategoriler
             // 
@@ -147,16 +155,18 @@
             this.dgvKategoriler.Margin = new System.Windows.Forms.Padding(6);
             this.dgvKategoriler.MultiSelect = false;
             this.dgvKategoriler.Name = "dgvKategoriler";
+            this.dgvKategoriler.RowHeadersWidth = 51;
             this.dgvKategoriler.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvKategoriler.Size = new System.Drawing.Size(1174, 495);
             this.dgvKategoriler.TabIndex = 5;
+            this.dgvKategoriler.Click += new System.EventHandler(this.dgvKategoriler_Click);
             // 
             // lblisim
             // 
             this.lblisim.AutoSize = true;
             this.lblisim.Location = new System.Drawing.Point(1297, 15);
             this.lblisim.Name = "lblisim";
-            this.lblisim.Size = new System.Drawing.Size(46, 24);
+            this.lblisim.Size = new System.Drawing.Size(61, 29);
             this.lblisim.TabIndex = 16;
             this.lblisim.Text = "İSİM";
             // 
@@ -165,13 +175,13 @@
             this.lblaciklama.AutoSize = true;
             this.lblaciklama.Location = new System.Drawing.Point(1267, 97);
             this.lblaciklama.Name = "lblaciklama";
-            this.lblaciklama.Size = new System.Drawing.Size(104, 24);
+            this.lblaciklama.Size = new System.Drawing.Size(130, 29);
             this.lblaciklama.TabIndex = 16;
             this.lblaciklama.Text = "AÇIKLAMA";
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(1472, 620);
@@ -189,9 +199,10 @@
             this.Controls.Add(this.btnListele);
             this.Controls.Add(this.dgvKategoriler);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form2";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKategoriler)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
