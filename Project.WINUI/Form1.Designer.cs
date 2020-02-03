@@ -28,25 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dtgrdkukkanici = new System.Windows.Forms.DataGridView();
+            this.dgvKullanici = new System.Windows.Forms.DataGridView();
             this.txtkullaniciadi = new System.Windows.Forms.TextBox();
             this.txtkullanicisifresi = new System.Windows.Forms.TextBox();
             this.lblKullaniciadi = new System.Windows.Forms.Label();
             this.lblsifre = new System.Windows.Forms.Label();
             this.btnekle = new System.Windows.Forms.Button();
             this.btngec = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgrdkukkanici)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKullanici)).BeginInit();
             this.SuspendLayout();
             // 
-            // dtgrdkukkanici
+            // dgvKullanici
             // 
-            this.dtgrdkukkanici.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgrdkukkanici.Location = new System.Drawing.Point(28, 14);
-            this.dtgrdkukkanici.Margin = new System.Windows.Forms.Padding(4);
-            this.dtgrdkukkanici.Name = "dtgrdkukkanici";
-            this.dtgrdkukkanici.RowHeadersWidth = 51;
-            this.dtgrdkukkanici.Size = new System.Drawing.Size(529, 150);
-            this.dtgrdkukkanici.TabIndex = 0;
+            this.dgvKullanici.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvKullanici.Location = new System.Drawing.Point(28, 14);
+            this.dgvKullanici.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvKullanici.Name = "dgvKullanici";
+            this.dgvKullanici.RowHeadersWidth = 51;
+            this.dgvKullanici.Size = new System.Drawing.Size(529, 150);
+            this.dgvKullanici.TabIndex = 0;
             // 
             // txtkullaniciadi
             // 
@@ -121,13 +121,12 @@
             this.Controls.Add(this.lblKullaniciadi);
             this.Controls.Add(this.txtkullanicisifresi);
             this.Controls.Add(this.txtkullaniciadi);
-            this.Controls.Add(this.dtgrdkukkanici);
+            this.Controls.Add(this.dgvKullanici);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "Form1";
             this.Text = "Kullanıcılar";
-            this.Load += new System.EventHandler(this.Form1_Load_1);
-            ((System.ComponentModel.ISupportInitialize)(this.dtgrdkukkanici)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKullanici)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -135,7 +134,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dtgrdkukkanici;
+        private System.Windows.Forms.DataGridView dgvKullanici;
         private System.Windows.Forms.TextBox txtkullaniciadi;
         private System.Windows.Forms.TextBox txtkullanicisifresi;
         private System.Windows.Forms.Label lblKullaniciadi;

@@ -19,22 +19,13 @@ namespace Project.WINUI
         public Form1()
         {
             InitializeComponent();
+            userRep = new AppUserRepository();
         }
-        MyContext DB;
+        AppUserRepository userRep;
         private void Form1_Load(object sender, EventArgs e)
         {
-            DB = DBTool.DBInstance;
-        }
-        
-        private void btnekle_Click(object sender, EventArgs e)
-        {
-            
-        
-        }
+            dgvKullanici.DataSource = userRep.Add(txtkullaniciadi.Text, txtkullanicisifresi.Text);
 
-        private void Form1_Load_1(object sender, EventArgs e)
-        {
-            ProductRepository db;
         }
     }
 }

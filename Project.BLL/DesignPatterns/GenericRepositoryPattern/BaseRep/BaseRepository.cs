@@ -28,7 +28,6 @@ namespace Project.BLL.DesignPatterns.GenericRepositoryPattern.BaseRep
         {
             db.Set<T>().Add(item);
             Save();
-            
         }
 
         public bool Any(System.Linq.Expressions.Expression<Func<T, bool>> exp)
