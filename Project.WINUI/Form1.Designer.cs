@@ -28,21 +28,93 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.dtgrdkukkanici = new System.Windows.Forms.DataGridView();
+            this.txtkullaniciadi = new System.Windows.Forms.TextBox();
+            this.txtkullanicisifresi = new System.Windows.Forms.TextBox();
+            this.lblKullaniciadi = new System.Windows.Forms.Label();
+            this.lblsifre = new System.Windows.Forms.Label();
+            this.btnekle = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgrdkukkanici)).BeginInit();
             this.SuspendLayout();
+            // 
+            // dtgrdkukkanici
+            // 
+            this.dtgrdkukkanici.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgrdkukkanici.Location = new System.Drawing.Point(23, 12);
+            this.dtgrdkukkanici.Name = "dtgrdkukkanici";
+            this.dtgrdkukkanici.Size = new System.Drawing.Size(529, 150);
+            this.dtgrdkukkanici.TabIndex = 0;
+            // 
+            // txtkullaniciadi
+            // 
+            this.txtkullaniciadi.Location = new System.Drawing.Point(180, 196);
+            this.txtkullaniciadi.Name = "txtkullaniciadi";
+            this.txtkullaniciadi.Size = new System.Drawing.Size(340, 26);
+            this.txtkullaniciadi.TabIndex = 1;
+            // 
+            // txtkullanicisifresi
+            // 
+            this.txtkullanicisifresi.Location = new System.Drawing.Point(180, 248);
+            this.txtkullanicisifresi.Name = "txtkullanicisifresi";
+            this.txtkullanicisifresi.Size = new System.Drawing.Size(340, 26);
+            this.txtkullanicisifresi.TabIndex = 1;
+            // 
+            // lblKullaniciadi
+            // 
+            this.lblKullaniciadi.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.lblKullaniciadi.Location = new System.Drawing.Point(23, 196);
+            this.lblKullaniciadi.Name = "lblKullaniciadi";
+            this.lblKullaniciadi.Size = new System.Drawing.Size(112, 26);
+            this.lblKullaniciadi.TabIndex = 2;
+            this.lblKullaniciadi.Text = "Kullanıcı Adı";
+            // 
+            // lblsifre
+            // 
+            this.lblsifre.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.lblsifre.Location = new System.Drawing.Point(23, 248);
+            this.lblsifre.Name = "lblsifre";
+            this.lblsifre.Size = new System.Drawing.Size(112, 26);
+            this.lblsifre.TabIndex = 2;
+            this.lblsifre.Text = "Şifre";
+            // 
+            // btnekle
+            // 
+            this.btnekle.Location = new System.Drawing.Point(273, 293);
+            this.btnekle.Name = "btnekle";
+            this.btnekle.Size = new System.Drawing.Size(108, 33);
+            this.btnekle.TabIndex = 3;
+            this.btnekle.Text = "EKLE";
+            this.btnekle.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(594, 413);
+            this.Controls.Add(this.btnekle);
+            this.Controls.Add(this.lblsifre);
+            this.Controls.Add(this.lblKullaniciadi);
+            this.Controls.Add(this.txtkullanicisifresi);
+            this.Controls.Add(this.txtkullaniciadi);
+            this.Controls.Add(this.dtgrdkukkanici);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Text = "Kullanıcılar";
+            ((System.ComponentModel.ISupportInitialize)(this.dtgrdkukkanici)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.DataGridView dtgrdkukkanici;
+        private System.Windows.Forms.TextBox txtkullaniciadi;
+        private System.Windows.Forms.TextBox txtkullanicisifresi;
+        private System.Windows.Forms.Label lblKullaniciadi;
+        private System.Windows.Forms.Label lblsifre;
+        private System.Windows.Forms.Button btnekle;
     }
 }
 
