@@ -44,7 +44,8 @@
             this.dtgrdkukkanici.Location = new System.Drawing.Point(28, 14);
             this.dtgrdkukkanici.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtgrdkukkanici.Name = "dtgrdkukkanici";
-            this.dtgrdkukkanici.Size = new System.Drawing.Size(607, 180);
+            this.dtgrdkukkanici.RowHeadersWidth = 51;
+            this.dtgrdkukkanici.Size = new System.Drawing.Size(529, 150);
             this.dtgrdkukkanici.TabIndex = 0;
             // 
             // txtkullaniciadi
@@ -53,7 +54,7 @@
             this.txtkullaniciadi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtkullaniciadi.Multiline = true;
             this.txtkullaniciadi.Name = "txtkullaniciadi";
-            this.txtkullaniciadi.Size = new System.Drawing.Size(415, 31);
+            this.txtkullaniciadi.Size = new System.Drawing.Size(340, 30);
             this.txtkullaniciadi.TabIndex = 1;
             // 
             // txtkullanicisifresi
@@ -62,7 +63,7 @@
             this.txtkullanicisifresi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtkullanicisifresi.Multiline = true;
             this.txtkullanicisifresi.Name = "txtkullanicisifresi";
-            this.txtkullanicisifresi.Size = new System.Drawing.Size(415, 31);
+            this.txtkullanicisifresi.Size = new System.Drawing.Size(340, 30);
             this.txtkullanicisifresi.TabIndex = 1;
             // 
             // lblKullaniciadi
