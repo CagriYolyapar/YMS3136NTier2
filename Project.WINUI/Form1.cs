@@ -21,5 +21,10 @@ namespace Project.WINUI
         {
 
         }
+
+        private void btnekle_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

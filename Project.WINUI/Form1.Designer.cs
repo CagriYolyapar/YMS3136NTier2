@@ -42,6 +42,7 @@
             this.dtgrdkukkanici.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgrdkukkanici.Location = new System.Drawing.Point(23, 12);
             this.dtgrdkukkanici.Name = "dtgrdkukkanici";
+            this.dtgrdkukkanici.RowHeadersWidth = 51;
             this.dtgrdkukkanici.Size = new System.Drawing.Size(529, 150);
             this.dtgrdkukkanici.TabIndex = 0;
             // 
@@ -49,14 +50,14 @@
             // 
             this.txtkullaniciadi.Location = new System.Drawing.Point(180, 196);
             this.txtkullaniciadi.Name = "txtkullaniciadi";
-            this.txtkullaniciadi.Size = new System.Drawing.Size(340, 26);
+            this.txtkullaniciadi.Size = new System.Drawing.Size(340, 30);
             this.txtkullaniciadi.TabIndex = 1;
             // 
             // txtkullanicisifresi
             // 
             this.txtkullanicisifresi.Location = new System.Drawing.Point(180, 248);
             this.txtkullanicisifresi.Name = "txtkullanicisifresi";
-            this.txtkullanicisifresi.Size = new System.Drawing.Size(340, 26);
+            this.txtkullanicisifresi.Size = new System.Drawing.Size(340, 30);
             this.txtkullanicisifresi.TabIndex = 1;
             // 
             // lblKullaniciadi
@@ -85,10 +86,11 @@
             this.btnekle.TabIndex = 3;
             this.btnekle.Text = "EKLE";
             this.btnekle.UseVisualStyleBackColor = true;
+            this.btnekle.Click += new System.EventHandler(this.btnekle_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(594, 413);
             this.Controls.Add(this.btnekle);
