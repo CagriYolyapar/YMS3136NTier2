@@ -42,7 +42,7 @@
             // 
             this.dtgrdkukkanici.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgrdkukkanici.Location = new System.Drawing.Point(28, 14);
-            this.dtgrdkukkanici.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtgrdkukkanici.Margin = new System.Windows.Forms.Padding(4);
             this.dtgrdkukkanici.Name = "dtgrdkukkanici";
             this.dtgrdkukkanici.RowHeadersWidth = 51;
             this.dtgrdkukkanici.Size = new System.Drawing.Size(529, 150);
@@ -51,7 +51,7 @@
             // txtkullaniciadi
             // 
             this.txtkullaniciadi.Location = new System.Drawing.Point(220, 235);
-            this.txtkullaniciadi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtkullaniciadi.Margin = new System.Windows.Forms.Padding(4);
             this.txtkullaniciadi.Multiline = true;
             this.txtkullaniciadi.Name = "txtkullaniciadi";
             this.txtkullaniciadi.Size = new System.Drawing.Size(340, 30);
@@ -60,7 +60,7 @@
             // txtkullanicisifresi
             // 
             this.txtkullanicisifresi.Location = new System.Drawing.Point(220, 298);
-            this.txtkullanicisifresi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtkullanicisifresi.Margin = new System.Windows.Forms.Padding(4);
             this.txtkullanicisifresi.Multiline = true;
             this.txtkullanicisifresi.Name = "txtkullanicisifresi";
             this.txtkullanicisifresi.Size = new System.Drawing.Size(340, 30);
@@ -92,7 +92,7 @@
             // 
             this.btnekle.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnekle.Location = new System.Drawing.Point(334, 352);
-            this.btnekle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnekle.Margin = new System.Windows.Forms.Padding(4);
             this.btnekle.Name = "btnekle";
             this.btnekle.Size = new System.Drawing.Size(132, 40);
             this.btnekle.TabIndex = 3;
@@ -112,7 +112,7 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(667, 466);
             this.Controls.Add(this.btngec);
@@ -126,6 +126,7 @@
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "Form1";
             this.Text = "Kullanıcılar";
+            this.Load += new System.EventHandler(this.Form1_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dtgrdkukkanici)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
